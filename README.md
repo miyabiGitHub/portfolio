@@ -9,7 +9,7 @@
 - **アニメーション**: [Framer Motion](https://www.framer.com/motion/) v11
 - **パーティクル**: [tsparticles](https://particles.js.org/) v3
 - **アイコン**: [Lucide React](https://lucide.dev/) + [Devicons](https://devicon.dev/)
-- **デプロイ**: [Cloudflare Pages](https://pages.cloudflare.com/)
+- **デプロイ**: [Cloudflare Pages](https://portfolio.k-msy.workers.dev)
 
 ## ローカル開発
 
