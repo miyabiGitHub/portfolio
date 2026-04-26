@@ -110,21 +110,28 @@ export default function ContactSection() {
           </p>
 
           {/* CTA Button */}
-          <motion.a
+          <a
             href="https://crowdworks.jp/public/employees/5888875?ref=share_url_wkprofile"
             target="_blank"
             rel="noopener noreferrer"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.97 }}
-            className="inline-flex items-center gap-3 px-8 py-4 text-white font-semibold rounded-full text-base transition-all duration-300"
+            className="inline-flex items-center gap-3 px-8 py-4 text-white font-semibold rounded-full text-base"
             style={{
               background: "linear-gradient(135deg, #4F8EF7, #A855F7, #EC4899)",
               boxShadow: "0 0 30px rgba(168,85,247,0.25)",
+              transition: "transform 0.2s ease, box-shadow 0.2s ease",
+            }}
+            onMouseEnter={(e) => {
+              (e.currentTarget as HTMLAnchorElement).style.transform = "scale(1.05)";
+              (e.currentTarget as HTMLAnchorElement).style.boxShadow = "0 0 50px rgba(168,85,247,0.45)";
+            }}
+            onMouseLeave={(e) => {
+              (e.currentTarget as HTMLAnchorElement).style.transform = "scale(1)";
+              (e.currentTarget as HTMLAnchorElement).style.boxShadow = "0 0 30px rgba(168,85,247,0.25)";
             }}
           >
             <ExternalLink size={18} />
             クラウドワークスでお問い合わせ
-          </motion.a>
+          </a>
         </motion.div>
 
         {/* Tech stack decorations */}

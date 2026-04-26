@@ -83,7 +83,7 @@ wrangler pages deploy dist --project-name=tech-aurora-portfolio
 `src/layouts/Layout.astro` の `siteUrl` を実際のドメインに変更してください:
 
 ```ts
-const siteUrl = "https://your-actual-domain.pages.dev";
+const siteUrl = "portfolio-8j2.pages.dev";
 ```
 
 ### クラウドワークスのリンク設定
