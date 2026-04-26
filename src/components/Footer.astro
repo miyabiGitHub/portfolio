@@ -1,0 +1,63 @@
+---
+const currentYear = new Date().getFullYear();
+
+const navLinks = [
+  { href: "#about", label: "About" },
+  { href: "#skills", label: "Skills" },
+  { href: "#work", label: "Works" },
+  { href: "#certifications", label: "資格" },
+  { href: "#contact", label: "Contact" },
+];
+---
+
+<footer class="relative border-t border-white/5 bg-dark-900">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+      <!-- Logo -->
+      <div class="text-center md:text-left">
+        <a
+          href="#hero"
+          class="text-lg font-bold aurora-text inline-block mb-2"
+        >
+          &lt;Portfolio /&gt;
+        </a>
+        <p class="text-gray-500 text-xs">
+          AI × Web × Infrastructure Engineer
+        </p>
+      </div>
+
+      <!-- Nav links -->
+      <nav class="flex flex-wrap justify-center gap-6">
+        {
+          navLinks.map((link) => (
+            <a
+              href={link.href}
+              class="text-sm text-gray-500 hover:text-gray-300 transition-colors duration-200"
+            >
+              {link.label}
+            </a>
+          ))
+        }
+      </nav>
+    </div>
+
+    <!-- Divider -->
+    <div
+      class="w-full h-px my-8"
+      style="background: linear-gradient(90deg, transparent, rgba(79,142,247,0.2), rgba(168,85,247,0.2), transparent);"
+    ></div>
+
+    <!-- Bottom -->
+    <div class="flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-gray-600">
+      <p>© {currentYear} Portfolio. All rights reserved.</p>
+      <div class="flex items-center gap-2">
+        <span>Built with</span>
+        <span class="aurora-text font-semibold">Astro</span>
+        <span>+</span>
+        <span class="aurora-text font-semibold">Tailwind CSS</span>
+        <span>+</span>
+        <span class="aurora-text font-semibold">Framer Motion</span>
+      </div>
+    </div>
+  </div>
+</footer>

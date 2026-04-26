@@ -1,0 +1,186 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" fill="none">
+  <defs>
+    <!-- Background gradient -->
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#000510"/>
+      <stop offset="60%" stop-color="#0A0E27"/>
+      <stop offset="100%" stop-color="#0D1133"/>
+    </linearGradient>
+
+    <!-- Aurora gradient (text & accents) -->
+    <linearGradient id="aurora" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%"   stop-color="#4F8EF7"/>
+      <stop offset="45%"  stop-color="#A855F7"/>
+      <stop offset="100%" stop-color="#EC4899"/>
+    </linearGradient>
+
+    <!-- Glow orbs -->
+    <radialGradient id="orb1" cx="0.25" cy="0.45" r="0.55">
+      <stop offset="0%" stop-color="#4F8EF7" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#4F8EF7" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="orb2" cx="0.72" cy="0.55" r="0.5">
+      <stop offset="0%" stop-color="#A855F7" stop-opacity="0.20"/>
+      <stop offset="100%" stop-color="#A855F7" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="orb3" cx="0.88" cy="0.20" r="0.35">
+      <stop offset="0%" stop-color="#EC4899" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#EC4899" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Card gradient -->
+    <linearGradient id="cardBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.04"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.01"/>
+    </linearGradient>
+
+    <!-- Shimmer on border line -->
+    <linearGradient id="divider" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%"   stop-color="#4F8EF7" stop-opacity="0"/>
+      <stop offset="30%"  stop-color="#4F8EF7" stop-opacity="0.6"/>
+      <stop offset="50%"  stop-color="#A855F7" stop-opacity="0.6"/>
+      <stop offset="70%"  stop-color="#EC4899" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#EC4899" stop-opacity="0"/>
+    </linearGradient>
+
+    <linearGradient id="dividerBottom" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%"   stop-color="#EC4899" stop-opacity="0"/>
+      <stop offset="30%"  stop-color="#EC4899" stop-opacity="0.4"/>
+      <stop offset="70%"  stop-color="#4F8EF7" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#4F8EF7" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Badge gradient -->
+    <linearGradient id="badgeBg" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#4F8EF7" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#4F8EF7" stop-opacity="0.05"/>
+    </linearGradient>
+
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- ========== BACKGROUND ========== -->
+  <rect width="1200" height="630" fill="url(#bgGrad)"/>
+
+  <!-- Glow orbs -->
+  <rect width="1200" height="630" fill="url(#orb1)"/>
+  <rect width="1200" height="630" fill="url(#orb2)"/>
+  <rect width="1200" height="630" fill="url(#orb3)"/>
+
+  <!-- Grid pattern -->
+  <g stroke="#4F8EF7" stroke-width="0.4" stroke-opacity="0.06">
+    <line x1="0"    y1="50"  x2="1200" y2="50"/>
+    <line x1="0"    y1="100" x2="1200" y2="100"/>
+    <line x1="0"    y1="150" x2="1200" y2="150"/>
+    <line x1="0"    y1="200" x2="1200" y2="200"/>
+    <line x1="0"    y1="250" x2="1200" y2="250"/>
+    <line x1="0"    y1="300" x2="1200" y2="300"/>
+    <line x1="0"    y1="350" x2="1200" y2="350"/>
+    <line x1="0"    y1="400" x2="1200" y2="400"/>
+    <line x1="0"    y1="450" x2="1200" y2="450"/>
+    <line x1="0"    y1="500" x2="1200" y2="500"/>
+    <line x1="0"    y1="550" x2="1200" y2="550"/>
+    <line x1="0"    y1="600" x2="1200" y2="600"/>
+    <line x1="100"  y1="0" x2="100"  y2="630"/>
+    <line x1="200"  y1="0" x2="200"  y2="630"/>
+    <line x1="300"  y1="0" x2="300"  y2="630"/>
+    <line x1="400"  y1="0" x2="400"  y2="630"/>
+    <line x1="500"  y1="0" x2="500"  y2="630"/>
+    <line x1="600"  y1="0" x2="600"  y2="630"/>
+    <line x1="700"  y1="0" x2="700"  y2="630"/>
+    <line x1="800"  y1="0" x2="800"  y2="630"/>
+    <line x1="900"  y1="0" x2="900"  y2="630"/>
+    <line x1="1000" y1="0" x2="1000" y2="630"/>
+    <line x1="1100" y1="0" x2="1100" y2="630"/>
+  </g>
+
+  <!-- Top divider line -->
+  <rect x="0" y="0" width="1200" height="3" fill="url(#divider)"/>
+
+  <!-- ========== MAIN CARD ========== -->
+  <rect x="60" y="60" width="1080" height="510" rx="24" fill="url(#cardBg)" stroke="#ffffff" stroke-opacity="0.06" stroke-width="1"/>
+
+  <!-- ========== LEFT SECTION ========== -->
+
+  <!-- Logo badge -->
+  <rect x="100" y="108" width="130" height="38" rx="19" fill="#4F8EF7" fill-opacity="0.12" stroke="#4F8EF7" stroke-opacity="0.35" stroke-width="1"/>
+  <!-- Dot -->
+  <circle cx="120" cy="127" r="5" fill="#4F8EF7"/>
+  <text x="133" y="132" font-family="'Courier New', monospace" font-size="15" font-weight="600" fill="#4F8EF7" letter-spacing="1">Portfolio</text>
+
+  <!-- Main heading line 1 -->
+  <text x="100" y="215" font-family="'Arial Black', 'Helvetica', sans-serif" font-size="70" font-weight="900" fill="url(#aurora)" letter-spacing="-1" filter="url(#glow)">AI × Web</text>
+
+  <!-- Main heading line 2 -->
+  <text x="100" y="300" font-family="'Arial Black', 'Helvetica', sans-serif" font-size="70" font-weight="900" fill="#ffffff" letter-spacing="-1">× Infrastructure</text>
+
+  <!-- Accent bar under heading -->
+  <rect x="100" y="318" width="340" height="3" rx="1.5" fill="url(#aurora)"/>
+
+  <!-- Subtitle -->
+  <text x="100" y="370" font-family="'Helvetica Neue', 'Arial', sans-serif" font-size="20" fill="#94a3b8" letter-spacing="0.3">ChatGPT・Claude等のLLMを活用したアプリ開発のエンジニア</text>
+  <text x="100" y="400" font-family="'Helvetica Neue', 'Arial', sans-serif" font-size="20" fill="#94a3b8" letter-spacing="0.3">インフラからアプリ実装まで一貫対応</text>
+
+  <!-- Tags row -->
+  <!-- Tag: Python -->
+  <rect x="100" y="440" width="80" height="30" rx="15" fill="#4F8EF7" fill-opacity="0.12" stroke="#4F8EF7" stroke-opacity="0.3" stroke-width="1"/>
+  <text x="140" y="460" font-family="sans-serif" font-size="13" fill="#4F8EF7" text-anchor="middle">Python</text>
+
+  <!-- Tag: AWS -->
+  <rect x="192" y="440" width="60" height="30" rx="15" fill="#A855F7" fill-opacity="0.12" stroke="#A855F7" stroke-opacity="0.3" stroke-width="1"/>
+  <text x="222" y="460" font-family="sans-serif" font-size="13" fill="#A855F7" text-anchor="middle">AWS</text>
+
+  <!-- Tag: OpenAI -->
+  <rect x="264" y="440" width="95" height="30" rx="15" fill="#EC4899" fill-opacity="0.12" stroke="#EC4899" stroke-opacity="0.3" stroke-width="1"/>
+  <text x="311" y="460" font-family="sans-serif" font-size="13" fill="#EC4899" text-anchor="middle">OpenAI API</text>
+
+  <!-- Tag: Java -->
+  <rect x="371" y="440" width="56" height="30" rx="15" fill="#38BDF8" fill-opacity="0.12" stroke="#38BDF8" stroke-opacity="0.3" stroke-width="1"/>
+  <text x="399" y="460" font-family="sans-serif" font-size="13" fill="#38BDF8" text-anchor="middle">Java</text>
+
+  <!-- ========== DIVIDER ========== -->
+  <line x1="680" y1="90" x2="680" y2="540" stroke="#ffffff" stroke-opacity="0.06" stroke-width="1"/>
+
+  <!-- ========== RIGHT SECTION ========== -->
+
+  <!-- Stats block -->
+
+  <!-- Stat 1: 資格数 -->
+  <rect x="720" y="108" width="220" height="110" rx="16" fill="#ffffff" fill-opacity="0.025" stroke="#4F8EF7" stroke-opacity="0.2" stroke-width="1"/>
+  <text x="740" y="158" font-family="'Arial Black', sans-serif" font-size="52" font-weight="900" fill="#4F8EF7" filter="url(#glow)">14</text>
+  <text x="800" y="153" font-family="sans-serif" font-size="13" fill="#4F8EF7" fill-opacity="0.7">保有</text>
+  <text x="740" y="200" font-family="sans-serif" font-size="15" fill="#64748b">保有資格数</text>
+
+  <!-- Stat 2: AWS -->
+  <rect x="960" y="108" width="220" height="110" rx="16" fill="#ffffff" fill-opacity="0.025" stroke="#A855F7" stroke-opacity="0.2" stroke-width="1"/>
+  <text x="980" y="158" font-family="'Arial Black', sans-serif" font-size="52" font-weight="900" fill="#A855F7" filter="url(#glow)">4冠</text>
+  <text x="980" y="200" font-family="sans-serif" font-size="15" fill="#64748b">AWS 認定</text>
+
+  <!-- Stat 3: 言語 -->
+  <rect x="720" y="238" width="220" height="110" rx="16" fill="#ffffff" fill-opacity="0.025" stroke="#EC4899" stroke-opacity="0.2" stroke-width="1"/>
+  <text x="740" y="288" font-family="'Arial Black', sans-serif" font-size="52" font-weight="900" fill="#EC4899" filter="url(#glow)">5+</text>
+  <text x="740" y="330" font-family="sans-serif" font-size="15" fill="#64748b">対応言語</text>
+
+  <!-- Stat 4: AI -->
+  <rect x="960" y="238" width="220" height="110" rx="16" fill="#ffffff" fill-opacity="0.025" stroke="#38BDF8" stroke-opacity="0.2" stroke-width="1"/>
+  <text x="980" y="272" font-family="'Arial Black', sans-serif" font-size="32" font-weight="900" fill="#38BDF8" filter="url(#glow)">AI Dev</text>
+  <text x="980" y="310" font-family="'Arial Black', sans-serif" font-size="22" font-weight="900" fill="#38BDF8">Projects</text>
+  <text x="980" y="340" font-family="sans-serif" font-size="15" fill="#64748b">AI 開発実績</text>
+
+  <!-- Security badge -->
+  <rect x="720" y="378" width="460" height="50" rx="14" fill="#A855F7" fill-opacity="0.08" stroke="#A855F7" stroke-opacity="0.25" stroke-width="1"/>
+  <text x="730" y="409" font-size="18">🛡️</text>
+  <text x="760" y="410" font-family="sans-serif" font-size="16" fill="#c084fc" font-weight="600">情報処理安全確保支援士</text>
+  <text x="980" y="410" font-family="sans-serif" font-size="14" fill="#64748b">AWS Security Specialty 他</text>
+
+  <!-- CW link hint -->
+  <rect x="720" y="450" width="460" height="40" rx="12" fill="#4F8EF7" fill-opacity="0.07" stroke="#4F8EF7" stroke-opacity="0.2" stroke-width="1"/>
+  <text x="735" y="475" font-size="16">🔗</text>
+  <text x="760" y="476" font-family="sans-serif" font-size="15" fill="#4F8EF7">crowdworks.jp/public/employees/5888875</text>
+
+  <!-- Bottom divider -->
+  <rect x="0" y="627" width="1200" height="3" fill="url(#dividerBottom)"/>
+</svg>

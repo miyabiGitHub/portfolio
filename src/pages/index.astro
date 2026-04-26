@@ -1,0 +1,41 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import Navigation from "@/components/Navigation.astro";
+import Footer from "@/components/Footer.astro";
+import HeroSection from "@/components/HeroSection";
+import AboutSection from "@/components/AboutSection";
+import SkillsSection from "@/components/SkillsSection";
+import FeaturedWorkSection from "@/components/FeaturedWorkSection";
+import StatsSection from "@/components/StatsSection";
+import CertificationsSection from "@/components/CertificationsSection";
+import ContactSection from "@/components/ContactSection";
+---
+
+<Layout>
+  <Navigation />
+
+  <main>
+    <!-- Hero: client:load for immediate render -->
+    <HeroSection client:load />
+
+    <!-- About -->
+    <AboutSection client:visible />
+
+    <!-- Skills -->
+    <SkillsSection client:visible />
+
+    <!-- Featured Work -->
+    <FeaturedWorkSection client:visible />
+
+    <!-- Stats -->
+    <StatsSection client:visible />
+
+    <!-- Certifications -->
+    <CertificationsSection client:visible />
+
+    <!-- Contact -->
+    <ContactSection client:visible />
+  </main>
+
+  <Footer />
+</Layout>
